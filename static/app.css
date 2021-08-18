@@ -1,0 +1,16 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+h5 {
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: 15px;
+}
