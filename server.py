@@ -1,8 +1,10 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, abort, request
 import json
 from data import data
+from flask_cors import CORS
 
 app = Flask(__name__) # create a flask app
+CORS(app)
 
 me = {
     "name": "Sarah",
@@ -42,7 +44,6 @@ def get_categories():
     """
         Get the unique categories from the catalog (data var)
         and return them as a list of string
-
     """
     return "ok"
 
